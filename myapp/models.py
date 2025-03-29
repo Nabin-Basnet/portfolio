@@ -2,11 +2,11 @@ from django.db import models
 
 # Create your models here.
 class Project(models.Model):
-    title = models.CharField(max_length=200)
-    description = models.TextField()
-    image = models.ImageField(upload_to='projects/')
-    live_demo = models.URLField(blank=True, null=True)
-    github_link = models.URLField(blank=True, null=True)
+    title = models.CharField(max_length=200)    #title of th project
+    description = models.TextField()                            #description of project
+    image = models.ImageField(upload_to='projects/')            #logo or image for project
+    live_demo = models.URLField(blank=True, null=True)          #live demo url(button)
+    github_link = models.URLField(blank=True, null=True)        #github link
     
 
 class Skill(models.Model):
@@ -17,7 +17,7 @@ class Skill(models.Model):
 class ContactInfo(models.Model):
     name = models.CharField(max_length=100)        # Name of the person
     email = models.EmailField()                     # Email of the person
-    phone = models.CharField(max_length=15, null=True, blank=True)
+    phone = models.CharField(max_length=15, null=True, blank=True)      #phone number
 
 class PersonalDetail(models.Model):
     first_name = models.CharField(max_length=100)         # First name of the user

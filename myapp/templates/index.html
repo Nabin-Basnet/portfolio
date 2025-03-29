@@ -198,6 +198,9 @@
 
         .about-image {
             flex: 1;
+            height: 500px;
+            overflow: hidden;
+            object-fit: cover;
         }
 
         .about-image img {
@@ -520,6 +523,7 @@
     </style>
 </head>
 <body>
+    {% load static %}
     <!-- Header -->
     <header>
         <div class="container">
@@ -550,7 +554,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="/placeholder.svg?height=400&width=400" alt="Profile Image">
+                    <img src="{% static 'image/profile.jpg' %}" alt="Profile Image">
                 </div>
             </div>
         </div>
@@ -562,7 +566,7 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="/placeholder.svg?height=400&width=400" alt="About Me Image">
+                    <img src="{% static 'image/aboutme.jpg' %}" alt="About Me Image">
                 </div>
                 <div class="about-text">
                     <h2>Who I Am</h2>

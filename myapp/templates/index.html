@@ -269,6 +269,7 @@
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 30px;
             margin-top: 50px;
+            /* max-height: 500px; */
         }
 
         .project-card {
@@ -285,7 +286,7 @@
         }
 
         .project-image {
-            height: 200px;
+            height: 400px;
             overflow: hidden;
         }
 
@@ -625,35 +626,40 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="/placeholder.svg?height=200&width=350" alt="Project 1">
+                        <img  src="{% static 'image/calculator.png' %}" alt="Project 1">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">E-Commerce Platform</h3>
-                        <p class="project-description">A full-featured e-commerce platform with product management, cart functionality, and payment integration.</p>
+                        <h3 class="project-title">Calculator</h3>
+                        <p class="project-description">A simple and responsive calculator built using HTML, CSS, and JavaScript. It supports basic arithmetic operations like addition, subtraction, multiplication, and division. The design is clean and user-friendly, making calculations quick and easy.</p>
                         <div class="project-tags">
-                            <span class="project-tag">Django</span>
-                            <span class="project-tag">PostgreSQL</span>
+                            <span class="project-tag">Html</span>
+                            <span class="project-tag">Css</span>
                             <span class="project-tag">JavaScript</span>
                         </div>
-                        <a href="#" class="btn">View Project</a>
+                        <div>
+                            <a href="https://nabincalc.vercel.app/" class="btn">View Project</a>
+                            <a href="https://nabincalc.vercel.app/" class="btn">View code</a>
+
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="/placeholder.svg?height=200&width=350" alt="Project 2">
+                        <img  src="{% static 'image/Tic_Tac_Toe.png' %}" alt="Project 2">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Blog & CMS</h3>
-                        <p class="project-description">A content management system with blog functionality, user authentication, and admin dashboard.</p>
+                        <h3 class="project-title">Tik Tak Toe Game</h3>
+                        <p class="project-description">A fun and interactive Tic-Tac-Toe game built using HTML, CSS, and JavaScript. It allows two players to take turns marking X and O on a 3×3 grid. The game automatically detects the winner or a draw and provides a simple, user-friendly interface.</p>
                         <div class="project-tags">
-                            <span class="project-tag">Django</span>
-                            <span class="project-tag">SQLite</span>
-                            <span class="project-tag">Bootstrap</span>
+                            <span class="project-tag">Html</span>
+                            <span class="project-tag">Css</span>
+                            <span class="project-tag">JavaScript</span>
                         </div>
-                        <a href="#" class="btn">View Project</a>
+                        <a href="https://tiktakgame.vercel.app/" class="btn">View Project</a>
                     </div>
                 </div>
-                <div class="project-card">
+                <!-- <div class="project-card">
                     <div class="project-image">
                         <img src="/placeholder.svg?height=200&width=350" alt="Project 3">
                     </div>
@@ -667,7 +673,7 @@
                         </div>
                         <a href="#" class="btn">View Project</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
